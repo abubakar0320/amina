@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amina Mumtaz — International Academic Website
+
+Academic portfolio, research showcase, publication archive, teaching resources, and curriculum vitae for **Amina Mumtaz**, Applied Linguistics Researcher & University Lecturer.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Domain & Environment Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copy `.env.example` to `.env.local` (or set environment variables in your hosting provider) before deploying live:
 
-## Learn More
+1. **`NEXT_PUBLIC_SITE_URL`**: Configure your verified production origin (preferred domain baseline: `https://aminamumtaz.com`). Localhost URLs are never published as production canonical URLs; when unset, `src/config/site.ts` falls back to `https://aminamumtaz.com`.
+2. **`RESEND_API_KEY`**, **`CONTACT_FROM_EMAIL`**, **`CONTACT_TO_EMAIL`**: Required for live contact-form email delivery on `/contact` (`POST /api/contact`).
+3. **`NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` / `NEXT_PUBLIC_BING_SITE_VERIFICATION`**: Optional meta verification tokens emitted only when explicitly provided.
 
-To learn more about Next.js, take a look at the following resources:
+## Search Engine Indexing & Webmaster Deployment Checklist
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Note: The domain `aminamumtaz.com` is a preferred domain target unless verified as live. Once a production domain is connected and deployed over HTTPS:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Google Search Console Readiness
+1. Verify domain ownership (recommended: **Domain property via DNS TXT record**, or set `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` for HTML tag verification).
+2. Confirm `/robots.txt` allows crawling of public pages (`Allow: /`, `Disallow: /api/`).
+3. Submit `<SITE_URL>/sitemap.xml` inside **Indexing → Sitemaps**.
+4. Run **URL Inspection** on key canonical pages (`/`, `/about`, `/research`, `/publications`, `/publications/study-of-colligation`, `/teaching`, `/cv`, `/contact`) and request indexing once live.
+5. Monitor coverage, canonical selection, and Schema.org structured-data extraction (`Person`, `WebSite`, `ProfilePage`, `ScholarlyArticle`, `BreadcrumbList`).
 
-## Deploy on Vercel
+### Bing Webmaster Tools Readiness
+1. Add and verify the site property (via DNS verification, Search Console import, or `NEXT_PUBLIC_BING_SITE_VERIFICATION` emitting `<meta name="msvalidate.01">`).
+2. Submit `<SITE_URL>/sitemap.xml` and verify URL crawlability and mobile compatibility.
+3. Review Bing URL Inspection for canonical URLs and Open Graph metadata.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Vercel Production Deployment Instructions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Import the repository into Vercel (Framework Preset: **Next.js**). Build command: `npm run build`; Install command: `npm ci`.
+2. Add environment variables in **Project Settings → Environment Variables** (`Production` and `Preview` as appropriate):
+   - `NEXT_PUBLIC_SITE_URL` (set to your verified HTTPS production origin, e.g. `https://aminamumtaz.com`)
+   - `RESEND_API_KEY`, `CONTACT_FROM_EMAIL`, `CONTACT_TO_EMAIL`
+   - Optional: `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION`, `NEXT_PUBLIC_BING_SITE_VERIFICATION`
+3. Connect your custom domain under **Settings → Domains** and configure DNS `A` / `CNAME` records per Vercel's instructions until SSL issuance completes.
+4. For high-traffic production deployments, consider upgrading the in-memory contact API rate limiter in `src/app/api/contact/route.ts` to a distributed store (e.g., Upstash Redis / Vercel WAF) so limits persist across serverless instances.
+
