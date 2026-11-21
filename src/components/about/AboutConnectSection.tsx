@@ -72,7 +72,7 @@ export function AboutConnectSection() {
                   size="lg"
                   fullWidth
                 >
-                  <Mail aria-hidden="true" className="h-4 w-4 text-terracotta" />
+                  <Mail aria-hidden="true" className="h-4 w-4 text-soft-gold" />
                   <span>Contact Amina</span>
                 </ButtonLink>
               </div>

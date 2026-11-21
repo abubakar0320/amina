@@ -58,7 +58,7 @@ export function CollaborationSection() {
                 >
                   <Mail
                     aria-hidden="true"
-                    className="h-4 w-4 text-terracotta"
+                    className="h-4 w-4 text-soft-gold"
                   />
                   <span>Get in Touch</span>
                 </ButtonLink>

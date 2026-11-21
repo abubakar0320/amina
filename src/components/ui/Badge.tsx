@@ -21,10 +21,10 @@ export interface BadgeProps {
 const VARIANT_CLASSES: Record<BadgeVariant, string> = {
   navy: "bg-primary-navy text-pure-white border-primary-navy",
   blue: "bg-soft-blue text-primary-navy border-primary-navy/25",
-  teal: "bg-soft-teal text-deep-navy border-teal/35",
-  purple: "bg-soft-purple text-deep-navy border-purple/35",
-  gold: "bg-soft-gold text-deep-navy border-golden-yellow/75",
-  terracotta: "bg-pure-white text-deep-navy border-terracotta/70",
+  teal: "bg-teal text-pure-white border-teal",
+  purple: "bg-purple text-pure-white border-purple",
+  gold: "bg-golden-yellow text-deep-navy border-[#B38114] font-semibold",
+  terracotta: "bg-terracotta text-pure-white border-terracotta",
   cool: "bg-cool-white text-main-text border-border-subtle",
   outline: "bg-pure-white text-secondary-text border-border-subtle",
 };
@@ -32,10 +32,10 @@ const VARIANT_CLASSES: Record<BadgeVariant, string> = {
 const DOT_CLASSES: Record<BadgeVariant, string> = {
   navy: "bg-golden-yellow",
   blue: "bg-primary-navy",
-  teal: "bg-teal",
-  purple: "bg-purple",
-  gold: "bg-terracotta",
-  terracotta: "bg-terracotta",
+  teal: "bg-soft-teal",
+  purple: "bg-soft-purple",
+  gold: "bg-deep-navy",
+  terracotta: "bg-soft-gold",
   cool: "bg-primary-navy/70",
   outline: "bg-teal",
 };

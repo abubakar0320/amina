@@ -41,7 +41,7 @@ export function CorpusDatasetSection() {
                       {CORPUS_DATASET_SUMMARY.totalSamples}
                     </p>
                   </div>
-                  <Badge variant="teal" className="bg-pure-white text-deep-navy">
+                  <Badge variant="gold">
                     {CORPUS_DATASET_SUMMARY.corpusName}
                   </Badge>
                 </div>
@@ -154,8 +154,8 @@ export function CorpusDatasetSection() {
                       width="298"
                       height="34"
                       rx="8"
-                      fill="#E7F4F1"
-                      stroke="#168C87"
+                      fill="#0D635F"
+                      stroke="#094A47"
                       strokeWidth="1.25"
                     />
                     <text
@@ -172,7 +172,7 @@ export function CorpusDatasetSection() {
                       x="451"
                       y="52"
                       textAnchor="middle"
-                      fill="#192B50"
+                      fill="#FFFFFF"
                       fontSize="13"
                       fontWeight="600"
                     >
@@ -252,7 +252,7 @@ export function CorpusDatasetSection() {
                       width="416"
                       height="20"
                       rx="6"
-                      fill="#168C87"
+                      fill="#0D635F"
                     />
                     <text
                       x="534"

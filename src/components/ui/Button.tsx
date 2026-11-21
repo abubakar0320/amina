@@ -31,13 +31,13 @@ const VARIANT_CLASSES: Record<ButtonVariant, string> = {
   secondary:
     "bg-soft-blue text-deep-navy border border-primary-navy/25 hover:bg-soft-blue/75 hover:border-primary-navy/50",
   teal:
-    "bg-soft-teal text-deep-navy border border-teal/50 hover:bg-teal/15 hover:border-teal shadow-2xs",
+    "bg-teal text-pure-white border border-teal hover:bg-[#094A47] hover:border-[#094A47] shadow-xs",
   purple:
-    "bg-soft-purple text-deep-navy border border-purple/45 hover:bg-purple/15 hover:border-purple shadow-2xs",
+    "bg-purple text-pure-white border border-purple hover:bg-[#41246B] hover:border-[#41246B] shadow-xs",
   gold:
-    "bg-soft-gold text-deep-navy border border-golden-yellow/75 hover:bg-golden-yellow/25 hover:border-golden-yellow shadow-2xs",
+    "bg-golden-yellow text-deep-navy border border-[#B38114] hover:bg-[#C28D1C] hover:border-[#9E7010] font-semibold shadow-xs",
   terracotta:
-    "bg-pure-white text-deep-navy border-2 border-terracotta hover:bg-soft-gold hover:border-terracotta shadow-xs",
+    "bg-terracotta text-pure-white border border-terracotta hover:bg-[#9E4118] hover:border-[#9E4118] shadow-xs",
   outline:
     "bg-pure-white text-main-text border border-border-subtle hover:bg-cool-white hover:border-primary-navy/45",
   outlineOnDark:

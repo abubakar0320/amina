@@ -55,7 +55,7 @@ export default function RouteError({
             </ButtonLink>
 
             <ButtonLink href="/contact" variant="terracotta" size="md">
-              <Mail aria-hidden="true" className="h-4 w-4 text-terracotta" />
+              <Mail aria-hidden="true" className="h-4 w-4 text-soft-gold" />
               <span>Contact Amina</span>
             </ButtonLink>
           </CardBody>

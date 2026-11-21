@@ -68,7 +68,7 @@ export function TeachingEngagementSection() {
                 >
                   <Mail
                     aria-hidden="true"
-                    className="h-4 w-4 text-terracotta"
+                    className="h-4 w-4 text-soft-gold"
                   />
                   <span>Contact for Academic Dialogue</span>
                 </ButtonLink>

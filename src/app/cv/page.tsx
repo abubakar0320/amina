@@ -185,20 +185,20 @@ export default function AcademicCVPage() {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {CV_RESEARCH_INTERESTS.map((item) => (
-                      <Badge key={item} variant="teal" className="bg-pure-white">
+                      <Badge key={item} variant="teal">
                         {item}
                       </Badge>
                     ))}
                   </div>
                 </div>
 
-                <div className="rounded-xl border border-golden-yellow/60 bg-soft-gold/60 p-4 sm:p-5 space-y-3">
+                <div className="rounded-xl border border-[#B88316]/65 bg-soft-gold/75 p-4 sm:p-5 space-y-3">
                   <h3 className="text-xs font-semibold uppercase tracking-[0.12em] text-deep-navy">
                     Teaching Interests
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     {CV_TEACHING_INTERESTS.map((item) => (
-                      <Badge key={item} variant="gold" className="bg-pure-white">
+                      <Badge key={item} variant="gold">
                         {item}
                       </Badge>
                     ))}
@@ -237,7 +237,7 @@ export default function AcademicCVPage() {
                   <p className="text-sm font-medium text-primary-navy">
                     MPhil Supervisor
                   </p>
-                  <p className="text-xs sm:text-sm text-secondary-text">
+                  <p className="text-xs sm:text-sm text-main-text/85">
                     Department of Applied Linguistics, GCUF.
                   </p>
                 </div>
@@ -255,7 +255,7 @@ export default function AcademicCVPage() {
               <ButtonLink href="/contact" variant="terracotta" size="md">
                 <Mail
                   aria-hidden="true"
-                  className="h-4 w-4 text-terracotta"
+                  className="h-4 w-4 text-soft-gold"
                 />
                 <span>Contact Amina</span>
               </ButtonLink>

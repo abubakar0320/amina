@@ -45,7 +45,7 @@ export function FormErrorState({ message, code }: FormErrorStateProps) {
           variant="terracotta"
           size="sm"
         >
-          <Mail aria-hidden="true" className="h-3.5 w-3.5 text-terracotta" />
+          <Mail aria-hidden="true" className="h-3.5 w-3.5 text-soft-gold" />
           <span>Email {ACADEMIC_IDENTITY.email}</span>
         </ButtonLink>
       </div>

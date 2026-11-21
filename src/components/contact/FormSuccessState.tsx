@@ -41,7 +41,7 @@ export function FormSuccessState({
 
       <div>
         <Button type="button" variant="teal" size="md" onClick={onReset}>
-          <RotateCcw aria-hidden="true" className="h-4 w-4 text-teal" />
+          <RotateCcw aria-hidden="true" className="h-4 w-4 text-soft-teal" />
           <span>Send Another Inquiry</span>
         </Button>
       </div>

@@ -56,7 +56,7 @@ export function renderAcademicSocialCard() {
                 width: "10px",
                 height: "10px",
                 borderRadius: "999px",
-                backgroundColor: "#168C87",
+                backgroundColor: "#0D635F",
               }}
             />
             <span>ACADEMIC RESEARCH PROFILE</span>
@@ -71,7 +71,7 @@ export function renderAcademicSocialCard() {
               height: "76px",
               borderRadius: "999px",
               backgroundColor: "#192B50",
-              border: "3px solid #E7BD55",
+              border: "3px solid #D8A228",
               fontSize: "28px",
               fontWeight: 700,
               letterSpacing: "0.08em",
@@ -107,7 +107,7 @@ export function renderAcademicSocialCard() {
             style={{
               display: "flex",
               alignItems: "center",
-              borderLeft: "5px solid #168C87",
+              borderLeft: "5px solid #0D635F",
               paddingLeft: "22px",
               fontSize: "30px",
               fontWeight: 500,
@@ -126,10 +126,10 @@ export function renderAcademicSocialCard() {
             }}
           >
             {[
-              { label: "Applied Linguistics", bg: "#EAF0FA", border: "#D4E0F3" },
-              { label: "Corpus Linguistics", bg: "#E7F4F1", border: "#C8E3DF" },
-              { label: "Colligation Studies", bg: "#F0EBF7", border: "#DDD3EE" },
-              { label: "English Language Teaching", bg: "#FBF5E5", border: "#E8DCBA" },
+              { label: "Applied Linguistics", bg: "#EAF0FA", border: "#B9CCE8", text: "#192B50" },
+              { label: "Corpus Linguistics", bg: "#0D635F", border: "#0D635F", text: "#FFFFFF" },
+              { label: "Colligation Studies", bg: "#553388", border: "#553388", text: "#FFFFFF" },
+              { label: "English Language Teaching", bg: "#D8A228", border: "#B38114", text: "#192B50" },
             ].map((topic) => (
               <div
                 key={topic.label}
@@ -140,7 +140,7 @@ export function renderAcademicSocialCard() {
                   padding: "10px 20px",
                   fontSize: "20px",
                   fontWeight: 600,
-                  color: "#192B50",
+                  color: topic.text,
                 }}
               >
                 {topic.label}

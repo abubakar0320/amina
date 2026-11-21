@@ -26,7 +26,10 @@ export function TeachingExperienceCard({
           <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-golden-yellow/80 bg-pure-white text-deep-navy">
             <Building2 aria-hidden="true" className="h-5 w-5" />
           </span>
-          <Badge variant={featured ? "gold" : "outline"} className="bg-pure-white text-deep-navy">
+          <Badge
+            variant={featured ? "gold" : "outline"}
+            className={featured ? undefined : "bg-pure-white text-deep-navy"}
+          >
             {position.appointmentType}
           </Badge>
         </div>

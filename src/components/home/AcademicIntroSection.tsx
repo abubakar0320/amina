@@ -64,7 +64,7 @@ export function AcademicIntroSection() {
                   <span>Discover My Academic Profile</span>
                   <ArrowRight
                     aria-hidden="true"
-                    className="h-4 w-4 text-purple transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:transform-none"
+                    className="h-4 w-4 text-soft-purple transition-transform duration-200 group-hover:translate-x-0.5 motion-reduce:transform-none"
                   />
                 </ButtonLink>
               </div>

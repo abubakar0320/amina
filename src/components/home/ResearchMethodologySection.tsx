@@ -82,7 +82,7 @@ export function ResearchMethodologySection() {
                 >
                   <div className="space-y-3">
                     <div className="flex items-center justify-between gap-2">
-                      <span className="inline-flex h-8 px-2.5 items-center justify-center rounded-lg border border-teal/35 bg-soft-teal text-xs font-semibold tracking-wider text-deep-navy">
+                      <span className="inline-flex h-8 px-2.5 items-center justify-center rounded-lg border border-teal bg-teal text-xs font-semibold tracking-wider text-pure-white">
                         Stage {stage.step}
                       </span>
                       <FlaskConical

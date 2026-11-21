@@ -30,27 +30,27 @@ export interface CardProps {
 const SURFACE_CLASSES: Record<CardSurface, string> = {
   white: "bg-pure-white border-border-subtle text-main-text",
   cool: "bg-cool-white border-border-subtle text-main-text",
-  blue: "bg-soft-blue border-primary-navy/20 text-main-text",
-  teal: "bg-soft-teal border-teal/30 text-main-text",
-  purple: "bg-soft-purple border-purple/25 text-main-text",
-  gold: "bg-soft-gold border-golden-yellow/60 text-main-text",
+  blue: "bg-soft-blue border-primary-navy/25 text-main-text",
+  teal: "bg-soft-teal border-teal/45 text-main-text",
+  purple: "bg-soft-purple border-purple/40 text-main-text",
+  gold: "bg-soft-gold border-[#B88316]/65 text-main-text",
   navy: "bg-deep-navy border-primary-navy text-pure-white",
 };
 
 const ACCENT_TOP_CLASSES: Record<CardAccentTone, string> = {
-  navy: "border-t-[3px] border-t-primary-navy",
-  teal: "border-t-[3px] border-t-teal",
-  purple: "border-t-[3px] border-t-purple",
-  gold: "border-t-[3px] border-t-golden-yellow",
-  terracotta: "border-t-[3px] border-t-terracotta",
+  navy: "border-t-[4px] border-t-primary-navy",
+  teal: "border-t-[4px] border-t-teal",
+  purple: "border-t-[4px] border-t-purple",
+  gold: "border-t-[4px] border-t-golden-yellow",
+  terracotta: "border-t-[4px] border-t-terracotta",
 };
 
 const HOVER_BORDER_CLASSES: Record<CardAccentTone, string> = {
-  navy: "hover:border-primary-navy/55",
-  teal: "hover:border-teal/65",
-  purple: "hover:border-purple/55",
-  gold: "hover:border-golden-yellow",
-  terracotta: "hover:border-terracotta/75",
+  navy: "hover:border-primary-navy/60",
+  teal: "hover:border-teal/80",
+  purple: "hover:border-purple/75",
+  gold: "hover:border-[#B38114]",
+  terracotta: "hover:border-terracotta/85",
 };
 
 export function Card({

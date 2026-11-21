@@ -116,7 +116,7 @@ export function ContactInformationCard() {
             >
               <Mail
                 aria-hidden="true"
-                className="h-4 w-4 text-terracotta"
+                className="h-4 w-4 text-soft-gold"
               />
               <span>Email Amina</span>
             </ButtonLink>

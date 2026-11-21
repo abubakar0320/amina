@@ -58,7 +58,7 @@ export function ResearchExperience() {
         </p>
         <div className="flex flex-wrap gap-2">
           {THESIS_TOOLS.map((tool) => (
-            <Badge key={tool} variant="teal" className="bg-pure-white">
+            <Badge key={tool} variant="teal">
               {tool}
             </Badge>
           ))}

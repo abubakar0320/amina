@@ -361,7 +361,7 @@ export function HeaderNav() {
             aria-hidden="true"
             className={cn(
               "h-3.5 w-3.5",
-              isContactActive ? "text-golden-yellow" : "text-terracotta"
+              isContactActive ? "text-golden-yellow" : "text-soft-gold"
             )}
           />
           <span>{CONTACT_NAV_ITEM.label}</span>

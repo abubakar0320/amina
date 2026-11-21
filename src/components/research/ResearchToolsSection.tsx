@@ -69,7 +69,7 @@ export function ResearchToolsSection() {
                         <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-teal/30 bg-soft-teal text-teal transition-colors group-hover:bg-teal group-hover:text-pure-white">
                           <IconComponent aria-hidden="true" className="h-4 w-4" />
                         </span>
-                        <Badge variant="teal" className="text-[0.6875rem] px-2.5 py-0.5 bg-pure-white">
+                        <Badge variant="teal" className="text-[0.6875rem] px-2.5 py-0.5">
                           {tool.category}
                         </Badge>
                       </div>

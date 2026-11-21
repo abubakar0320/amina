@@ -57,7 +57,7 @@ export function ResearchCollaborationSection() {
                 >
                   <Mail
                     aria-hidden="true"
-                    className="h-4 w-4 text-terracotta"
+                    className="h-4 w-4 text-soft-gold"
                   />
                   <span>Start an Academic Conversation</span>
                 </ButtonLink>
